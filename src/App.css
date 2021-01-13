@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+.columns {
+  float:right;
+  width: 33.%; 
+  border-radius:25px;
+  margin-top: 2%;
+  margin-left: 5%;
+  background-color:antiquewhite;
+  font-family: 'Merriweather Sans', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  
+  .price {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top:3%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
   }
-  to {
-    transform: rotate(360deg);
+  
+  .price .header {
+    color: black;
+    border-radius:25px;
+    padding-top: 2%;
+    padding-bottom: 2%; 
+    font-size: large;   
+    font-weight: bold;
   }
+  
+  .price li {
+    border-bottom: 75 solid #eee;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+  }
+  
+  .price .grey {
+    background-color: #eee;
+    font-size: 30px;
+  }
+
+  
+  .button { 
+      cursor: pointer;
+      background-color: transparent; 
+      height: 50px; 
+      color: #3498db; 
+      font-size: 1em; 
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+      width: 200px; 
+      border: 0 solid black;
+      border-radius:20px;
+      text-decoration: none;
+    } 
+
+    /*.box-border*/
+  table {
+  font-family: 'Merriweather Sans', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border:1px solid antiquewhite;
 }
+
+td{
+    text-align: unset;
+    padding-top: 36px;
+
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    
+}
+  
+  .fa-check-square-o{
+    color: green;
+    padding-left: 100px;
+  }
